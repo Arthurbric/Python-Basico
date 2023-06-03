@@ -1,0 +1,17 @@
+"""
+Desenvolva um programa que recebe dois números inteiros e retorna o maior deles.
+
+Entrada: 2 e 3             Saída: Maior valor: 3
+Entrada: 4 e 3             Saída: Maior valor: 4
+Entrada: 5 e 5             Saída: Maior valor: 5
+
+"""
+
+x = input("Digita o number 1 : ")
+y = input("Digita o number 2 : ")
+
+if x > y :
+    print(f"O numero --> {x} <-- es maior = ")
+elif x <= y :#else:
+    print(f"O numero --> {y} <-- es maior = ")
+

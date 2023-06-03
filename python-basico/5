@@ -1,0 +1,27 @@
+"""
+Escreva um algoritmo que solicita ao usuário dois números e uma operação
+(1 - Soma, 2 - Subtração, 3 - Divisão ou 4 - Multiplicação) e realiza a
+operação correspondente sobre os operandos fornecidos pelo usuário:
+"""
+
+
+n1 = int(input("Nota 1 : "))
+
+n2 = int(input("Nota 2 : "))
+
+n3 = input("operacao : ")
+
+if n3 == "1":
+    print(f"{n1} + {n2} = {n1+n2}")
+elif  n3 == "2":
+    print(f"{n1} - {n2} = {n1-n2}")
+elif  n3 == "3":
+    print(f"{n1} / {n2} = {n1/n2}")
+elif  n3 == "4":
+    print(f"{n1} x {n2} = {n1*n2}")
+else:
+    print("Valor invalido")
+
+
+
+

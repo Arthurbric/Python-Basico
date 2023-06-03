@@ -1,0 +1,41 @@
+"""
+Crie uma variação do programa anterior, porém com os seguintes requisitos adicionais:
+Calcule uma média ponderada: Peso da Nota 1 é 1, Peso da Nota 2 é 1.5 e Peso da Nota 3 é 2.
+Ao invés de mostrar se o aluno foi aprovado ou não com base na média ponderada mostre uma menção de SR, II, MI, MM, MS ou SS, conforme a média ponderada e usando a escala:
+SR - 0
+II - < 2
+MI - < 5
+MM - < 7
+MS - < 9
+SS - >=9
+
+"""
+def check(x,msg):
+    while x<0 or x>10:
+        print("..O valor esta errado da outro valor..")
+        x = int(input(f"Digita outro valor para o numero {msg} : "))
+    return x
+
+n1 = int(input("Nota 1 : "))
+n1 = check(n1, 1)
+n2 = int(input("Nota 2 : "))
+n2 = check(n2,2)
+n3 = int(input("Nota 3 : "))
+n3 = check(n3,3)
+
+media = n1+(n2*1.5)+(n3*2)
+media /= 4.5
+print(f"media das notas : {media}")
+if media>=9:
+    print(f"SS com {media}")
+elif media<=9 and media>7:
+    print(f"MS com {media}")
+elif media<=7 and media>5:
+    print(f"MM com {media}")
+elif media<=5 and media>2:
+    print(f"MI com {media}")
+elif media<=2 and media>0:
+    print(f"II com {media}")
+elif media==0:
+    print(f"SR com {media}")
+

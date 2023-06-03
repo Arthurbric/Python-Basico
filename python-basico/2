@@ -1,0 +1,32 @@
+"""
+Faça um programa que retorna a hora que for digitada e cumprimente de acordo com o horário.
+0 <= madrugada <6
+6 <= dia < 12
+12 <= tarde < 18
+18 <= noite <= 24
+
+
+Entrada 1: Hora: 5          			Saída 1: Agora são 5 horas. Boa Madrugada.
+Entrada 2: Hora: 7           			Saída 2: Agora são 7 horas. Bom Dia.
+Entrada 3: Hora: 13      			Saída 3: Agora são 13 horas. Boa Tarde.
+Entrada 4: Hora: 23      			Saída 3: Agora são 23 horas. Boa Noite.
+
+"""
+time_input = input("Digita a hora (HH:MM): ")
+hora, minuto = time_input.split(":")
+hora = int(hora)
+minuto = int(minuto)
+
+print("Hora: ", hora)
+print("Minuto: ", minuto)
+print("")
+if 0 <= hora <6 :
+    print(f"{hora}:{minuto} --> Boa Madrugada")
+elif 6 <= hora <12:
+    print(f"{hora}:{minuto} --> Boa Dia")
+elif 12 <= hora <18:
+    print(f"{hora}:{minuto} --> Boa Tarde")
+elif 18 <= hora <=24:
+    print(f"{hora}:{minuto} --> Boa Noite")
+else:
+    print(f"Esse horário --> {hora}:{minuto} não existe.")

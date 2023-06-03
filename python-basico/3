@@ -1,0 +1,25 @@
+"""
+Crie um programa que receba três notas de 0 até 10 (faça as validações para aceitar apenas esse intervalo), depois faça o cálculo da média aritmética e então mostre a média calculada e também se o aluno passou ou não.
+    -A escola aceita média 7 (sete) acima para aprovação.
+    -Atenção para a indentação do código (inclusive na entrega dos exercícios)
+"""
+def check(x,msg):
+    while x<0 or x>10:
+        print("..O valor esta errado da outro valor..")
+        x = int(input(f"Digita outro valor para o numero {msg} : "))
+    return x
+
+n1 = int(input("Nota 1 : "))
+n1 = check(n1, 1)
+n2 = int(input("Nota 2 : "))
+n2 = check(n2,2)
+n3 = int(input("Nota 3 : "))
+n3 = check(n3,3)
+
+media = n1+n2+n3
+media /=3
+print(f"media das notas : {media}")
+if media>7 and media<=10:
+    print(f"voce passo")
+else:
+    print(f"voce nao passo")
