@@ -1,0 +1,11 @@
+"""
+Faça um função que receba um número e imprima o número
+solicitado vezes uma quantidade que também será solicitada
+
+"""
+def sim():
+    s = str(input("str = "))
+    s += " "
+    n = int(input("n = "))
+    return s*n
+print(sim())

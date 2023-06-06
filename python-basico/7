@@ -1,0 +1,14 @@
+"""
+Faça uma função que receba uma variável e mostre na tela se ele for múltiplo de 2
+
+"""
+def fun(a):
+    if a %2 == 0:
+        return "Par"
+    else:
+        return "Impar"
+def msg():
+    return int(input("valor : "))
+n1 = msg()
+n1 = fun(n1)
+print(f'o valor que voce deu era {n1}')

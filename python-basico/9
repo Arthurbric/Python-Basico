@@ -1,0 +1,21 @@
+"""
+Escreva um algoritmo que solicita ao usuário N idades,
+o  programa apenas conta idades maiores ou iguais que 18
+E ao final do código deve mostrar o número de usuários
+que tem +18. O programa deve solicitar valores até que o
+usuário entre com -1. (Usando while)
+
+"""
+def check(a):
+    if a >=18:
+        return a
+ct = 0
+print("Para sair do programa digita (( -1 )) ")
+while True:
+    idade = int(input("Sua idade : "))
+    if idade == -1:
+        break
+    idade = check(idade)
+    if idade != None:
+        ct +=1
+print(f"Quantide de pessoas em cima de 18 sao --> {ct} <--")
